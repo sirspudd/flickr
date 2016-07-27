@@ -39,7 +39,7 @@
 **
 ****************************************************************************/
 
-import QtQuick 1.0
+import QtQuick 2.5
 
 Item {
     property variant progress: 0

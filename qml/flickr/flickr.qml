@@ -39,13 +39,16 @@
 **
 ****************************************************************************/
 
-import QtQuick 1.0
+import QtQuick 2.5
+import QtQuick.Window 2.2
+
 import "common" as Common
 import "mobile" as Mobile
 
-Item {
+Window {
     id: screen; width: 320; height: 480
     property bool inListView : false
+    visible: true
 
     Rectangle {
         id: background

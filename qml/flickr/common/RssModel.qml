@@ -39,7 +39,8 @@
 **
 ****************************************************************************/
 
-import QtQuick 1.0
+import QtQuick 2.5
+import QtQuick.XmlListModel 2.0
 
 XmlListModel {
     property string tags : ""

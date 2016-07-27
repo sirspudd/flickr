@@ -38,17 +38,14 @@
 **
 ****************************************************************************/
 
-#include "qmlapplicationviewer.h"
-#include <QtGui/QApplication>
+#include <QGuiApplication>
+#include <QQmlApplicationEngine>
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
-    QApplication app(argc, argv);
+    QGuiApplication app(argc, argv);
 
-    QmlApplicationViewer viewer;
-    viewer.setOrientation(QmlApplicationViewer::ScreenOrientationLockLandscape);
-    viewer.setMainQmlFile(QLatin1String("qml/flickr/flickr.qml"));
-    viewer.showExpanded();
+    QQmlApplicationEngine viewer("qml/flickr/flickr.qml");
 
     return app.exec();
 }
